@@ -1,0 +1,74 @@
+<div class="offer-section page-width">
+ <div class="Container">
+  {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+      <header class="seaction-heading-design SectionHeader SectionHeader--center ">
+        {%- if section.settings.subheading != blank -%}
+          <h3 class="subtitle h3">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+
+        {%- if section.settings.title != blank -%}
+          <h2 class="title h2">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+      </header>
+    {%- endif -%}
+
+   <div class="offers-main">
+    <div class="offers-img">
+    <img class="offer-image" src="{{ section.settings.image1 | img_url: "large" }}" alt="{{ section.settings.image1.alt | escape }}" />
+    </div>
+    <div class="offers-img">
+    <img class="offer-image" src="{{ section.settings.image2 | img_url: "large" }}" alt="{{ section.settings.image2.alt | escape }}" />
+    </div>
+    <div class="offers-img">
+    <img class="offer-image" src="{{ section.settings.image3 | img_url: "large" }}" alt="{{ section.settings.image3.alt | escape }}" />
+    </div>
+   </div>
+   
+ </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Offers",
+    "settings": [
+		{
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Heading"
+        },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Image"
+      }
+	],
+  "presets": [
+    {
+      "name": "Offer-section"
+    }
+  ]		
+ }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,380 @@
+<div class="recently-viewed-wrapper">
+    <div class="recently-viewed-grid">
+    <!-- Recently viewed products will appear here -->
+      
+    </div>
+</div>
+
+
+
+<script>
+  if(localStorage.getItem("flag") =="true"){
+    // localStorage.setItem("flag","true");
+  }else{
+    localStorage.clear();
+    localStorage.setItem("flag","true");
+}
+  var a={};
+
+    //start 
+let deleted_product = []
+  let deleted_product_id = []
+   let soted_api = []
+const productjs = JSON.parse(localStorage.getItem("recentlyViewedProduct"));
+$(productjs).each(function(i,a){
+ jQuery.getJSON(a.pHandle + '.js', function (product) {
+  deleted_product.push(product.handle)
+    deleted_product_id.push(product.id)
+   })
+   })
+
+
+  
+  let get_Handel_js = []
+   let get_Handel_js_id = []
+  let shorted_loc = []
+  setTimeout(function(){
+ // $('.recently-viewed-grid-item [product_js_hand]')
+    // $(this).attr('product_js_hand')
+   $(productjs).each(function(a,i){
+  let get_Handel =   i.pHandle
+   get_Handel_js.push(get_Handel)
+     get_Handel_js_id.push(i.productId)
+})   
+
+      // short -id
+    
+  for(let i=0;i<get_Handel_js.length;i++){
+    for(let j = 0;j<deleted_product_id.length;j++){
+        if(deleted_product_id[j] > deleted_product_id[j+1]){ 
+          let temp = deleted_product_id[j]
+          deleted_product_id[j] = deleted_product_id[j+1]
+          deleted_product_id[j+1] = temp     
+      }
+        if(get_Handel_js_id[j] > get_Handel_js_id[j+1]){ 
+          let temp = get_Handel_js_id[j]
+          get_Handel_js_id[j] = get_Handel_js_id[j+1]
+          get_Handel_js_id[j+1] = temp     
+      }
+    }
+  }
+     for(let j = 0;j<get_Handel_js.length;j++){
+    soted_api.push(deleted_product_id[j])
+     shorted_loc.push(parseInt(get_Handel_js_id[j]))
+      }
+
+for(let i=0;i<get_Handel_js.length;i++){
+if(deleted_product.indexOf(get_Handel_js[i])>-1 !== get_Handel_js.indexOf(deleted_product[i])>-1){
+  // $('.recently-viewed-grid-item [product_js_hand|="'+get_Handel_js[i]+'"]').closest('.recently-viewed-grid-item').remove()
+  for(let j=0;j<deleted_product.length;j++){
+     if(deleted_product[i] != get_Handel_js[i]){
+         if(soted_api[i] != shorted_loc[i]){
+  if(get_Handel_js[i] == 'example-t-shirt'){
+    $('.recently-viewed-grid-item [product_js_hand|="'+get_Handel_js[i]+'"]').closest('.recently-viewed-grid-item').remove()
+    console.log(get_Handel_js[i])
+  }
+  }
+      
+  }
+  }
+ 
+
+  
+//   if(soted_api[i] != shorted_loc[i]){
+// console.log(soted_api[i])
+// console.log('and')
+// console.log(shorted_loc[i])
+//   }
+}       
+}
+ },7000)
+   // end 
+   </script>
+<script>
+
+  // a =a.join(' ');
+ 
+function setRecentlyViewedProducts() {
+  const productData = {
+    productTitle: "{{ product.title }}",
+    productId: "{{ product.id }}",
+    variantId: "{{ product.selected_or_first_available_variant.id }}",
+    option1: "{{ product.variants[1].options }}",
+    pHandle: "{{ product.handle }}",
+    productImg: "{{ product.featured_media | img_url: '500x' }}",
+    productPrice: '{{ product.price | money_with_currency }}',
+    compare_at_price: '{{ product.compare_at_price | money_with_currency }}',
+    productUrl: "{{ product.url }}",
+    size:a,
+    productImageAltText: "{{product.featured_media.alt | escape }}"
+  };
+
+  const productList = [];
+  let jsonResp, jsonRespArr, jsonRespArrStr;
+  const numberOfProducts = 10;
+  productList.push(productData);
+  const currProductPageTitle = productData.productTitle;
+  const productDataString = JSON.stringify(productList);
+  const localData = localStorage.getItem("recentlyViewedProduct");
+
+  if (localData === null) {
+    localStorage.setItem("recentlyViewedProduct", productDataString);
+  } else if (localData) {
+    const oldProductData = localStorage.getItem("recentlyViewedProduct");
+    const countProductData = (oldProductData.match(/productTitle/g) || []).length;
+    const sameProduct = oldProductData.includes(currProductPageTitle);
+    if (countProductData < numberOfProducts && sameProduct == false) {
+      jsonResp = JSON.parse(oldProductData);
+      jsonRespArr = jsonResp.concat(productList);
+      jsonRespArrStr = JSON.stringify(jsonRespArr);
+      localStorage.setItem("recentlyViewedProduct", jsonRespArrStr);
+    } else if (countProductData >= numberOfProducts && sameProduct == false) {
+      jsonResp = JSON.parse(oldProductData);
+      jsonResp.shift();
+      jsonRespArr = jsonResp.concat(productList);
+      jsonRespArr = JSON.stringify(jsonRespArr);
+      localStorage.setItem("recentlyViewedProduct", jsonRespArr);
+    }
+  }
+
+  }
+setRecentlyViewedProducts();
+
+  function extractNumbersFromString(str) {
+  const regex = /(\d+(\.\d+)?)/g;
+  const numbers = str.match(regex) || [];
+  return numbers.join('');
+}
+
+  
+const localViewed = localStorage.recentlyViewedProduct;
+function getRecentlyViewedProducts() {
+  const productData = JSON.parse(localStorage.getItem("recentlyViewedProduct"));
+  const recentlyViewedHtml = [];
+  productData.map(item => {
+
+    // console.log(item);
+
+    var discount;
+
+    var compare_at_price = parseFloat(extractNumbersFromString(item.compare_at_price));
+
+    var pro_price = parseFloat(extractNumbersFromString(item.productPrice));
+
+    var discount = (compare_at_price - pro_price)/ compare_at_price * 100;
+
+    
+
+    recentlyViewedHtml.unshift(`
+    <div class="recently-viewed-grid-item item-product">
+      <div class="thumbnail-container recently-view-product-img">
+      <a href="${item.productUrl}">
+		<img class="recently-viewed-img testing" src='${item.productImg}' loading="lazy" alt="${item.productImageAltText}"/>
+    </a>
+     <ul class="sizes-list size-item variant_id Size-he-Size" slize="size" product_js_hand="${item.pHandle}" product_js='${item.productId}' >
+     
+                   <div class="cart-button">
+  <button
+    data-product-id="${item.productId}"
+    data-quantity="1"
+    data-variant-id="${item.variantId}"
+    onclick="addToCart(this)"
+    type="button"
+    class="product-form__submit button button--full-width button--primary">
+    Add to Cart
+    <div class="loading-overlay__spinner hidden">
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        role="presentation"
+        class="spinner"
+        viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
+  </button>
+
+              <button type="button" id="buy_button" onclick="checkoutFunction(${item.variantId})" class="product--buy-now-button shopify-payment-button__button shopify-payment-button__button--unbranded">
+                <span>Buy Now</span>
+              </button>
+              </div>
+     </ul>
+
+     
+      <div class='group-buttons'>
+
+      
+
+      <div class="variants-wrapper" id='${item.option1}'>
+        
+      </div>
+      
+      </div>
+      
+    
+      
+      </div>
+      
+      <div class="product__info">
+          <div class="block_product_info">
+             <div class="r_product__title"><h3 class="recently-view-h3 card__heading h5"><a class="recently-viewed-a" product_jsx_handel="" href="${item.productUrl}">${item.productTitle}</a></h3></div>
+             <div class="price  price--on-sale recently-view-price recently-view-price-container">
+               
+                   <div class="product_compareats_price" style="text-decoration: line-through;"><span>${item.compare_at_price}</span> </div>
+                   <div class="product__price"><span>${item.productPrice}
+                   <span class="percentage-off">
+        ${Math.round(discount)}% off
+        </span>
+                   </span></div>
+                 
+              
+              </div>
+          </div>
+       </div>
+    </div>
+   `);
+
+  })
+  const newProductData = `${recentlyViewedHtml.join("")}`;
+  const fullContent = document.getElementsByClassName("recently-viewed-grid");
+  fullContent[0].innerHTML = newProductData;
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  getRecentlyViewedProducts();
+    $(function(){
+    setTimeout(function(){
+    $('.recently-viewed-grid').slick({
+    infinite: true,
+    autoplay: true, 
+    autoplaySpeed: 5000, 
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+          {
+              breakpoint: 991, 
+              settings: { 
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '100px'
+              }
+            },
+            {
+              breakpoint: 769,
+              settings: {
+                centerMode: true,
+                centerPadding: '100px',
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                centerMode: true,
+                centerPadding: '100px',
+                 slidesToShow: 1,  
+                slidesToScroll: 1,
+                infinite: true
+              }
+            }
+          ]
+    });
+   },3000);   
+  });
+});
+
+</script>
+<style>
+.recently-viewed-wrapper {
+    padding: 0;
+}
+.recently-viewed-img {
+  width: 100%;
+}
+.recently-viewed-grid-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-top: none;
+  border-bottom: none;
+  padding-bottom: 7px;
+  overflow:hidden
+}
+.recently-viewed-a {
+  text-decoration: none;
+  color: black;
+}
+.recently-viewed-grid-item{position : relative}
+.recently-viewed-wrapper .block_product_info{
+  text-align: left;
+}
+
+
+
+.recently-viewed-wrapper .thumbnail-container:hover .recently-viewed-img{
+  transform: scale(1.1);
+  transition: opacity .8s,transform 2s cubic-bezier(0,0,.44,1.18),-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+}
+
+@media(max-width: 992px){
+  
+.recently-viewed-grid {
+   grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media(max-width: 767px){
+  
+.recently-viewed-grid {
+   grid-template-columns: repeat(2, 1fr);
+}
+.recently-viewed-wrapper .title_block{font-size: 23px !important}
+}
+</style>
+<script>
+  setTimeout(function(){
+
+  $('.sizes-list').each(function() {
+    var maxSizesToShow = 6;
+    var totalSizes = $(this).children('li').length;
+
+    if (totalSizes >= maxSizesToShow) {
+        // var hideCount = totalSizes - maxSizesToShow;
+
+        // console.log('hide' + hideCount);
+        // console.log('totalSizes' + totalSizes);
+
+        // Hide the excess sizes
+        $(this).children("li").slice(6).hide();
+
+     
+if(totalSizes > 6){
+
+var product_handle = $(this).attr('product_js_hand');
+
+    var product_link = '{{ shop.url }}/products/'+product_handle;
+    
+
+    var html_li = '<li class="size-item" data-parent="more-sizes"><a href="'+product_link+'">...</a></li>';
+
+    var target = $(this).find('li:last');
+
+    $(html_li).insertAfter(target);
+    
+}
+        
+    }
+});
+
+}, 3000);
+  
+
+</script>

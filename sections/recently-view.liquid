@@ -1,0 +1,41 @@
+<div id="recently-main-bx" class="page-width recently-view-section">
+    <div class="seaction-heading-design">
+            {%- if section.settings.subheading != blank -%}
+              <h3 class="subtitle h3">{{ section.settings.subheading | escape }}</h3>
+            {%- endif -%}
+            {%- if section.settings.heading != blank -%}
+              <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+            {%- endif -%}
+          {% comment %}
+            <h2 class="product-recommendations__heading {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+          {% endcomment %}
+    </div>
+  <!-- START recently-viewed -->
+ {% render 'recently-viewed' %}
+<!-- END recently-viewed -->
+</div>
+{% schema %}
+{
+"name": "Recently View",
+"settings": [
+    {
+    "type": "text",
+    "id": "subheading",
+    "label": "Sub-heading",
+    "default": "Sub-heading"
+    },
+    {
+    "type": "text",
+    "id": "heading",
+    "default": "Recently View",
+    "label": "Heading"
+    }
+    
+],
+"presets" : [
+{
+  "name" : "Recently View"
+  }
+]
+}
+{% endschema %}

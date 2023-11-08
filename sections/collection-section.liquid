@@ -1,0 +1,210 @@
+<section class="page-width">
+    <div class="container">
+      <div class="seaction-heading-design gallery-collection-title">
+      {% if section.settings.subheading != blank %}
+        <h3 class="subtitle h3">{{ section.settings.subheading }}</h3>
+      {% endif %}
+      {% if section.settings.img-heading != blank %}
+        <div class="heading-image">
+          <img src="{{ section.settings.img-heading | img_url: '1920x' }}" class="image-heading desktop-img" />
+          {% if section.settings.img-heading-mob != blank %}
+              <img src="{{ section.settings.img-heading-mob | img_url: '800x' }}" class="image-heading mobile-img" />
+          {% else %}
+              <img src="{{ section.settings.img-heading | img_url: '800x' }}" class="image-heading desktop-img force-desk" />
+          {% endif %}
+        </div>
+      {% else %}
+        <h3 class="title h2">{{ section.settings.title }}</h3>
+      {% endif %}
+  </div>
+        <div class="gallery-collection">
+            <div class="gallery-left-right-image ">
+                <div class="gallery-left">
+                    <a href="{{ section.settings.link1 }}"><img src="{{ section.settings.img-1 | image_url }}" class="gallery-image1" alt="{{ section.settings.img-1.alt | escape }}"/></a>
+                    {% if section.settings.subtext1 != blank %}
+                    <div class="collection-content">
+                        <h2 class="collection-content-heading">{{ section.settings.subtext1 }}</h2>
+                        <p class="collection-content-btn"><a href="{{ section.settings.link1 }}">{{ section.settings.shop-now-1 }}</a></p>
+                    </div>
+                    {% endif %}  
+                </div>
+            </div>
+            <div class="gallery-collection-center">
+                <div class="gallery-center gallery-center-1">
+                <div class="center-img">
+                  <a href="{{ section.settings.link2 }}">
+                  <img src="{{ section.settings.img-2 | image_url }}" alt="{{ section.settings.img-2.alt | escape }}" class="gallery-image2"/>
+                  <img src="{{ section.settings.img-mob1 | image_url }}" alt="{{ section.settings.img-mob1.alt | escape }}" class="gallery-image2 mob-image"/>
+                  </a>
+                </div>
+                {% if section.settings.subtext2 != blank %}
+                <div class="collection-content">
+                    <h2 class="collection-content-heading">{{ section.settings.subtext2 }}</h2>
+                    <p class="collection-content-btn"><a href="{{ section.settings.link2 }}">{{ section.settings.shop-now-2 }}</a></p>
+                </div>
+                {% endif %}  
+            </div>
+            <div class="gallery-center gallery-center-2">
+                <div class="center-img">
+                  <a href="{{ section.settings.link3 }}">
+                  <img src="{{ section.settings.img-3 | image_url }}" alt="{{ section.settings.img-3.alt | escape }}" class="gallery-image3"/>
+                    <img src="{{ section.settings.img-mob2 | image_url }}" alt="{{ section.settings.img-mob2.alt | escape }}" class="gallery-image2 mob-image"/>
+                  </a>
+                </div>
+                {% if section.settings.subtext3 != blank %}
+                  <div class="collection-content collection-content-3">
+                      <h2 class="collection-content-heading">{{ section.settings.subtext3 }}</h2>
+                      <p class="collection-content-btn"><a href="{{ section.settings.link3 }}">{{ section.settings.shop-now-3 }}</a></p>
+                  </div>
+                {% endif %}
+                </div>
+            </div>
+            <div class="gallery-left-right-image center-new">
+                <div class="gallery-right">
+                <a href="{{ section.settings.link4 }}"><img src="{{ section.settings.img-4 | image_url }}" alt="{{ section.settings.img-4.alt | escape }}" class="gallery-image4"/></a>
+                  {% if section.settings.subtext4 != blank%}
+                    <div class="collection-content">
+                        <h2 class="collection-content-heading">{{ section.settings.subtext4 }}</h2>
+                        <p class="collection-content-btn"><a href="{{ section.settings.link4 }}">{{ section.settings.shop-now-3 }}</a></p>
+                    </div>
+                   {% endif %} 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+{
+"name": "Gallery Collection",
+  "class": "gallery-collection-section",
+"settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Heading"
+    },
+      {
+        "type": "image_picker",
+        "id": "img-heading",
+        "label": "Heading Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "img-heading-mob",
+        "label": "Heading Image Mob"
+      },
+    {
+        "type":"image_picker",
+        "id":"img-1",
+        "label":"Image1"
+    },
+    {
+        "type":"text",
+        "id":"subtext1",
+        "label":"Collection Heading"
+    },
+    {
+        "type":"text",
+        "id":"shop-now-1",
+        "label":"Collection Button"
+    },
+    {
+      "type": "url",
+      "id": "link1",
+      "label": "Collection Link"
+    },
+    {
+        "type":"image_picker",
+        "id":"img-2",
+        "label":"Image2"
+    },
+    {
+        "type":"image_picker",
+        "id":"img-mob1",
+        "label":"Mob 1"
+    },
+    {
+        "type":"text",
+        "id":"subtext2",
+        "label":"Collection Heading"
+    },
+    {
+        "type":"text",
+        "id":"shop-now-2",
+        "label":"Collection Button"
+    },
+    {
+      "type": "url",
+      "id": "link2",
+      "label": "Collection Link"
+    },
+    {
+        "type":"image_picker",
+        "id":"img-3",
+        "label":"Image3"
+    },
+    {
+        "type":"image_picker",
+        "id":"img-mob2",
+        "label":"Mob2"
+    },
+    {
+        "type":"text",
+        "id":"subtext3",
+        "label":"Collection Heading"
+    },
+    {
+        "type":"text",
+        "id":"shop-now-3",
+        "label":"Collection Button"
+    },
+    {
+      "type": "url",
+      "id": "link3",
+      "label": "Collection Link"
+    },
+    {
+        "type":"image_picker",
+        "id":"img-4",
+        "label":"Image4"
+    },
+    {
+        "type":"text",
+        "id":"subtext4",
+        "label":"Collection Heading"
+    },
+    {
+        "type":"text",
+        "id":"shop-now-4",
+        "label":"Collection Button"
+    },
+    {
+      "type": "url",
+      "id": "link4",
+      "label": "Collection Link"
+    }
+],
+"presets": [
+{
+  "category": "Image",
+  "name": "gallerycolletion"
+}
+]		
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

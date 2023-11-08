@@ -1,0 +1,145 @@
+
+<div class="index-section page-width" id="custom-text-new">
+    <header class="seaction-heading-design header-text-center SectionHeader SectionHeader--center">
+        {%- if section.settings.subheading != blank -%}
+        <h3 class="subtitle h3">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+    
+        {%- if section.settings.title != blank -%}
+        <h2 class="title h2">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+    </header>
+
+    <div class="footer-collection-content-text"> 
+        {% if section.settings.descripion.size > 200 %}
+        <div class="text-description-short">
+            {{ section.settings.descripion | truncatewords: 200 }}<span class="readmore-text" href="#">Read more</span>
+        </div>
+        <div class="text-description-full" style="display:none;">
+            {{ section.settings.descripion }}
+            <span class="readless-text" href="#">Read Less</span>
+        </div>
+        {% else %}
+        {{ section.settings.descripion }}
+        {% endif %}
+    </div>
+</div>
+ 
+<script>
+$('.readmore-text').click(function (event) {
+    event.preventDefault();
+    var descriptionFulltext = document.querySelector('.text-description-full');
+    descriptionFulltext.style.display = 'block';
+    var descriptionShorttext = document.querySelector('.text-description-short');
+    descriptionShorttext.style.display = 'none';
+});
+
+$('.readless-text').click(function (event) {
+    event.preventDefault();
+    var descriptionFulltext = document.querySelector('.text-description-full');
+    descriptionFulltext.style.display = 'none';
+    var descriptionShorttext = document.querySelector('.text-description-short');
+    descriptionShorttext.style.display = 'block';
+    window.scrollTo({ bottom: 1200, behavior: 'smooth' });
+});
+</script>
+
+{% schema %}
+{
+    "name": "Custom Text",
+    "class": "to-btm-mg-common-text",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+        },
+        {
+            "type": "html",
+            "id": "descripion",
+            "label": "Description",
+            "default": "html"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Custom Text",
+            "settings": {
+                "title": "Custom Text"
+            }
+        }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+   .footer-collection-content-text .desc-tagss {
+    padding-top: 10px;
+}
+      .footer-collection-content-text .desc-tagss a {
+    color: #601a3e;
+    text-decoration: underline;
+    margin: 0px 5px;
+        font-weight:500;
+}
+      
+      .footer-collection-content-text h2, .footer-collection-content-text h3{
+    font-weight: 600;
+        color: #601a3e;
+        margin:10px 0 0 0;
+        font-size:20px;
+} 
+    .footer-collection-content-text h3{
+      margin:10px 0 0 0;
+    }
+  
+  .text-description-full a{
+    font-weight:700;
+  }
+       .readmore-text {
+       color: #601a3e;
+    max-width: 110px;
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 600;
+        font-size:22px;
+          line-height:1;
+         font-size:18px
+} 
+       .readless-text {
+    color: #601a3e;
+    max-width: 110px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+        font-size:18px;
+}  
+.footer-collection-content-text a {
+        color: #601a3e;
+    text-decoration: none;
+    border-bottom: 1px solid #601a3e;
+    font-weight: 500;
+}     
+      .footer-collection-content-text p { 
+    color: #4d4d4d;
+    font-size: 15px;
+        margin:0; 
+}
+  .to-btm-mg-common-text{ 
+    padding:35px 0 50px;   
+  }
+  .cstm-text-cate strong {
+   color: #601a3e;
+}
+.cstm-text-cate a {
+  color: #4d4d4d;
+  text-decoration: underline;
+  margin: 0px 5px;
+  font-weight: 500;
+}
+ 
+      {% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-about",
+      "settings": {
+      }
+    },
+    "1664184501b5beb105": {
+      "type": "image-with-text",
+      "blocks": {
+        "1664184501ac02b545-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Traditional & Contemporary Fashion Experience",
+            "sub-heading": "Promising Styles To Capture Your Heart  ",
+            "heading_size": "h2"
+          }
+        },
+        "1664184501ac02b545-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>“Fashion has to reflect who you are, what you feel at the moment and where you’re going, it's an experience to relish”<\/p><p>Owing to this philosophy, Stylum as a brand is a place that not only focuses on its products but believes in crafting a unique concoction of style and experience to come up with meaningful contemporary silhouettes. Mesmerizing, not quite ethnic, and not all out western, our brand curates products with a touch of traditionally handcrafted embroideries like never before in lush fabrics, elegant motifs, and prints with breathtaking details to make sure that every attire speaks for you.<\/p><p>Founded in 2015 by Priyanka Agarwal, Stylum is a clothing brand that brings meaning, culture, and identity to its products. A place that celebrates the beauty of ethnic wear, full of mesmerizing handcrafted embroideries, patterns, and prints. Our founder wanted to develop unique pieces that would be able to express stories and values rather than just be an item of clothing. Since the brand's inception, Stylum has expanded its range of merchandise within different consumer segments, such as western wear and Indian wear. Our motto is to make sure that every customer looks their best and feels their best. Therefore, we offer an extensive selection of garments, ranging from traditional pieces to modern fashion.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "1664184501ac02b545-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "GET IN TOUCH",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "1664184501ac02b545-0",
+        "1664184501ac02b545-1",
+        "1664184501ac02b545-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-new.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "4f1b2302-4d63-4f7b-88ef-88939165bd6e": {
+      "type": "about-us",
+      "settings": {
+        "title": "",
+        "sub-title": "",
+        "image": "shopify:\/\/shop_images\/About_us.jpg",
+        "image-url": "",
+        "heading": "Traditional & Contemporary Fashion Experience",
+        "sub-heading": "",
+        "sub-heading2": "“Fashion has to reflect who you are, what you feel at the moment and where you’re going, it's an experience to relish”Owing to this philosophy, Stylum as a brand is a place that not only focuses on its products but believes in crafting a unique concoction of style and experience to come up with meaningful contemporary silhouettes. Mesmerizing, not quite ethnic, and not all out western, our brand curates products with a touch of traditionally handcrafted embroideries like never before in lush fabrics, elegant motifs, and prints with breathtaking details to make sure that every attire speaks for you.",
+        "sub-heading3": "",
+        "button": "",
+        "button-link": ""
+      }
+    },
+    "64c29ef5-cedd-4cf6-aa62-9cd6962d358d": {
+      "type": "right-image-about-us",
+      "settings": {
+        "title": "",
+        "sub-title": "",
+        "image": "shopify:\/\/shop_images\/About_us_2.jpg",
+        "image-url": "",
+        "heading": "Promising Styles To Capture Your Heart  ",
+        "sub-heading": "",
+        "sub-heading2": "Founded in 2015 by Priyanka Agarwal, Stylum is a clothing brand that brings meaning, culture, and identity to its products. A place that celebrates the beauty of ethnic wear, full of mesmerizing handcrafted embroideries, patterns, and prints. Our founder wanted to develop unique pieces that would be able to express stories and values rather than just be an item of clothing. Since the brand's inception, Stylum has expanded its range of merchandise within different consumer segments, such as western wear and Indian wear. Our motto is to make sure that every customer looks their best and feels their best. Therefore, we offer an extensive selection of garments, ranging from traditional pieces to modern fashion.",
+        "sub-heading3": "",
+        "button": "",
+        "button-link": ""
+      }
+    },
+    "166418407170d0d14d": {
+      "type": "usp-section",
+      "blocks": {
+        "1664184071bb9e7a54-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fast-delivery_107x_c0a63b16-c6b3-48a7-8525-c1ce54bde0d0.png",
+            "icon-name": "Free Shipping"
+          }
+        },
+        "a15f3656-66c1-451d-82c4-40b946354c1c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/worldwide_Delivery_107x_ff435883-18e2-4581-858a-3fd36db944db.png",
+            "icon-name": "Worldwide Delivery"
+          }
+        },
+        "14d65f84-0e63-450c-af6f-b2afe1868de3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/secure-payment_107x_8981bd33-ff1a-4550-a089-5a79a20c02d8.png",
+            "icon-name": "Secured Payments"
+          }
+        },
+        "f539d794-5d2d-439f-96c3-beb540dbecae": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cash-on-delivery_107x_3560d205-0c00-4e5d-a312-1bc136fa6e68.png",
+            "icon-name": "Cash On Delivery"
+          }
+        },
+        "ee527461-9b33-4d9b-8428-965621d55f2d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-support_107x_6584213d-38b2-4708-a32c-9dc21177c952.png",
+            "icon-name": "Customer Support"
+          }
+        }
+      },
+      "block_order": [
+        "1664184071bb9e7a54-0",
+        "a15f3656-66c1-451d-82c4-40b946354c1c",
+        "14d65f84-0e63-450c-af6f-b2afe1868de3",
+        "f539d794-5d2d-439f-96c3-beb540dbecae",
+        "ee527461-9b33-4d9b-8428-965621d55f2d"
+      ],
+      "settings": {
+        "subheading": "Shop Our",
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1664184501b5beb105",
+    "4f1b2302-4d63-4f7b-88ef-88939165bd6e",
+    "64c29ef5-cedd-4cf6-aa62-9cd6962d358d",
+    "166418407170d0d14d"
+  ]
+}

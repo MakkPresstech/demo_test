@@ -1,0 +1,186 @@
+<div class="banner-slider-section banner-slider-section-{% increment counter %}">
+    <header class="seaction-heading-design header-text-center SectionHeader SectionHeader--center">
+        
+        {%- if section.settings.subheading != blank -%}
+        <h3 class="subtitle h3">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+    
+       {% if section.settings.img-heading != blank %}
+        <div class="heading-image">
+          <img src="{{ section.settings.img-heading | img_url: '1920x' }}" class="image-heading desktop-img" />
+          {% if section.settings.img-heading-mob != blank %}
+              <img src="{{ section.settings.img-heading-mob | img_url: '800x' }}" class="image-heading mobile-img" />
+          {% else %}
+              <img src="{{ section.settings.img-heading | img_url: '800x' }}" class="image-heading desktop-img force-desk" />
+          {% endif %}
+        </div>
+      {% else %}
+        <h3 class="title h2">{{ section.settings.title }}</h3>
+      {% endif %}
+
+      </header>
+  <div class="hero-slider hero-slider-banner">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'image' -%}
+    <div class="item">
+      <div class="banner-image">
+        {% if block.settings.image.src != blank %}
+             <a class="desktop" href="{{ block.settings.image-url }}"><img loading='lazy' src="{{ block.settings.image.src | img_url: "1920x" }}" alt="{{ block.settings.image.alt | escape }}" /></a>
+        {% endif %}
+        {% if block.settings.image-mob.src != blank %}
+           <a class="mobile" href="{{ block.settings.image-url }}"><img loading='lazy' src="{{ block.settings.image-mob.src | img_url: "767x" }}" alt="{{ block.settings.image-mob.alt | escape }}" /></a>
+        {% endif %}
+      </div>
+      {% comment %}
+      <div class="banner-content page-width">
+        <h2 class="heading">{{ block.settings.collection_tittle }}</h2>
+        <p class="sub-text">{{ block.settings.sub_text }}</p>
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}" class="new-style-button"> Shop Now </a>
+        {% endif %}
+      </div>
+        {% endcomment %}
+    </div>
+    {%- when 'video' -%}
+         <div class="item video-banner">
+        {% if block.settings.video-url != blank %}
+           <video class="desktop" muted loop playsinline autoplay>
+            <source src="{{ block.settings.video-url }}" type="video/mp4">
+            <source src="{{ block.settings.video-url }}" type="video/ogg">
+            Your browser does not support the video tag.
+           </video>
+        {% endif %}
+        {% if block.settings.video-url2 != blank %}
+           <video class="mobile" muted loop playsinline autoplay>
+            <source src="{{ block.settings.video-url2 }}" type="video/mp4">
+            <source src="{{ block.settings.video-url2 }}" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        {% endif %}
+         </div>
+    {%- endcase block.type -%}
+    
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Banner-Slider",
+    "settings": [
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading"
+        },
+      {
+        "type": "image_picker",
+        "id": "img-heading",
+        "label": "Heading Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "img-heading-mob",
+        "label": "Heading Image Mob"
+      }
+      
+	],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Banner slider",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Desktop Image"
+        },
+        {
+          "id": "image-mob",
+          "type": "image_picker",
+          "label": "Mobile Image"
+        },
+          {
+            "type": "url",
+            "id" : "image-url",
+            "label": "Image Url"
+          },
+		{
+          "type": "text",
+          "id": "collection_tittle",
+          "label": "Collection title"
+        },
+		{
+          "type": "text",
+          "id": "sub_text",
+          "label": "Collection title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Collection Link"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Banner video",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video-url",
+          "label": "Banner-video"
+        },
+        {
+          "type": "url",
+          "id": "video-url2",
+          "label": "Mobile-Banner-video"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Banner-slider",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]		
+ }
+{% endschema %}
+ 
+{% stylesheet %}
+  div#shopify-section-template--19935364350234__362f3bd2-615d-4e8d-a1cf-4694ba8fbb09 ul.slick-dots, div#shopify-section-template--19935364350234__d39eec75-40f3-441a-a9a8-3a23367ea477 ul.slick-dots, div#shopify-section-template--19935364350234__0c372da3-3418-4855-a1f2-9af856e651c2 ul.slick-dots{
+    display: none; 
+} 
+{% endstylesheet %}
+
+{% javascript %}
+$(".hero-slider-banner").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+     responsive: [
+          { 
+            breakpoint: 769,
+            settings: {
+  			   arrows: false, 
+               dots: true
+            }
+          }
+        ]
+});
+{% endjavascript %}

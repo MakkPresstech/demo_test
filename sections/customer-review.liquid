@@ -1,0 +1,446 @@
+<div class="customer-review-section-layout">
+    <div class="page-width">
+    
+     <header class="seaction-heading-design header-text-center SectionHeader SectionHeader--center">
+        
+        {%- if section.settings.subheading != blank -%}
+        <h3 class="subtitle h3">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+    
+        {% if section.settings.img-heading != blank %}
+        <div class="heading-image">
+          <img src="{{ section.settings.img-heading | img_url: '1920x' }}" class="image-heading desktop-img" />
+          {% if section.settings.img-heading-mob != blank %}
+              <img src="{{ section.settings.img-heading-mob | img_url: '800x' }}" class="image-heading mobile-img" />
+          {% else %}
+              <img src="{{ section.settings.img-heading | img_url: '800x' }}" class="image-heading desktop-img force-desk" />
+          {% endif %}
+        </div>
+      {% else %}
+        <h3 class="title h2">{{ section.settings.title }}</h3>
+      {% endif %}
+
+      </header>
+      
+      
+	<div class="review-section-bg-image">
+      <div class="customer-review-section">
+        {%- for block in section.blocks -%}
+        <div class="item">
+          <div class="customer-padding">
+            <div class="img">
+              <img src="{{ block.settings.image.src | img_url: "large" }}" />
+            </div>
+            <div class="tittle">
+              {% if block.settings.discri.size > 20 %}
+              <p class="descri">{{ block.settings.discri | truncatewords: 20 }}<span class="truncate-dots">...</span></p>
+              {% else %}
+              <p class="descri">{{ block.settings.discri }}</p>
+              {% endif %}
+              <div class="review-star {{ block.settings.review-star }}">
+                <p class="review-star-hide oneStar">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </p>
+                <p class="review-star-hide twoStar">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </p>
+                <p class="review-star-hide threeStar">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </p>
+                <p class="review-star-hide fourStar">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                </p>
+                <p class="review-star-hide fiveStar">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </p>
+              </div>
+              
+              <p class="name">{{ block.settings.name }}</p>
+<!--  <p class="button"><a href="{{ block.settings.link }}">Read More</a></p> -->             
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+      {%- if section.settings.view-all != blank -%}
+    <div class="view-all-button customer-view-all">
+      <a href="{{ section.settings.link-all }}">{{ section.settings.view-all }}</a>
+    </div>
+    {%- endif -%}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Customer Review",
+    "settings": [
+		{
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Heading"
+        },
+      {
+        "type": "image_picker",
+        "id": "img-heading",
+        "label": "Heading Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "img-heading-mob",
+        "label": "Heading Image Mob"
+      },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "subheading",
+          "default": "subheading"
+        },
+        {
+          "type": "text",
+          "id": "view-all",
+          "label": "Button Name",
+          "default": "View all"
+        },
+        {
+          "type": "url",
+          "id": "link-all",
+          "label": "View All Link"
+        }
+	],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "customerreview",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+		{
+          "type": "text",
+          "id": "discri",
+          "label": "Heading",
+          "default": "Tell your story"
+        },
+		{
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+		{
+          "type": "select",
+          "id": "review-star",
+          "label": "Recire Stars",
+          "options": [
+            {
+              "value": "oneStar",
+              "label": "One Star"
+            },
+            {
+              "value": "twoStar",
+              "label": "Two Star"
+            },
+            {
+              "value": "threeStar",
+              "label": "Three Star"
+            },
+            {
+              "value": "fourStar",
+              "label": "Four Star"
+            },
+            {
+              "value": "fiveStar",
+              "label": "Five Star"
+            }
+          ],
+          "default": "fiveStar"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Product link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Customer Review",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]		 
+ }
+{% endschema %}
+
+{% stylesheet %}
+  /* customer review css start */
+.new-container {
+    max-width: 1380px; 
+    padding: 0 15px;
+    margin: 0 auto;
+}
+  .customer-review-section-layout .page-width {
+    max-width: 1350px;
+} 
+.customer-review-section {
+    margin: 0 -10px;
+} 
+  .customer-review-section-layout {
+        padding-top:60px; 
+    padding-bottom: 60px;  
+    background: #601a3e0f;  
+}
+  .review-section-bg-image {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-size: contain;
+}
+.customer-review-section {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 12px;
+}
+.customer-review-section .item {
+    margin: 0px 10px;
+  padding:2px 0;
+}
+
+.customer-review-section .item .customer-padding {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transition: opacity .5s ease,transform .8s cubic-bezier(.25,.46,.45,.94);
+    transform: scale(1);
+    box-shadow: 0 0 2px #dc781a52;
+    background: #fff;
+}
+.customer-review-section .item .img {
+    display: block;
+    position: relative;
+    width: 38%;
+  overflow:hidden;
+}
+.customer-review-section .item .img img {
+    transition: scale 8s cubic-bezier(.25,.46,.45,.94);
+  max-width:100%;
+}
+  .descri {
+    margin: 0; 
+  }
+.customer-review-section .item .img:hover img, .customer-review-section .item:hover img {
+    scale: 1.2;
+    transform-origin: center;
+    transition: scale 8s cubic-bezier(.25,.46,.45,.94);
+}
+.customer-review-section .item .tittle {
+    position: relative;
+    padding: 10px 20px;
+    width: 62%;    
+}
+  .customer-review-section .item .tittle .descri {
+}
+.customer-review-section .item .tittle .name {
+    font-size: 16px;
+    margin: 0;
+  text-transform:lowercase;
+}
+.customer-review-section .item .tittle .name:first-letter{
+  text-transform:capitalize;
+}
+  .review-star p {
+    font-size: 16px!important;
+    margin: 0px!important;
+}
+.customer-review-section .item .tittle p {
+    
+  	
+}
+.review-star .fa-star {
+    color: #c89936;
+}
+.review-star .review-star-hide {
+    display: none;
+  	margin-bottom: 5px;
+}
+.review-star.oneStar .oneStar {
+    display: block;
+}
+.review-star.twoStar .twoStar {  
+    display: block;
+}
+.review-star.threeStar .threeStar {
+    display: block;
+}
+.review-star.fourStar .fourStar {
+    display: block;
+}
+.review-star.fiveStar .fiveStar {
+    display: block;
+}
+  .customer-review-section .button:after {
+  	display: none!important;
+  }
+  .customer-review-section .button {
+    background: transparent;
+    border: 2px solid #603913;
+    transition: 0.5s;
+}
+  .customer-review-section .button:hover {
+    background: #603913;
+}
+  .customer-review-section .button a {
+    color: #603913;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+  .customer-review-section .button:hover a {
+    color: #fff;
+}
+.customer-view-all {
+    margin-top: 3rem;
+}
+  .stars-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: unset;
+}
+.customer-review-section-layout h2.h2 {
+    margin-bottom: 20px!important;
+}  
+  /* customer review css end */
+
+  @media(max-width: 1300px){
+     .customer-review-section .slick-list.draggable {
+    padding-left: 0!important;
+}
+  }
+  @media(max-width: 1200px){
+  .customer-review-section .item .tittle .descri {
+    font-size: 13px;
+    margin: 5px 0 10px;
+}
+
+.review-star p {
+    font-size: 13px!important;
+    line-height: 1;
+}
+
+.customer-review-section .item .tittle .name {
+    font-size: 14px;
+}
+  .customer-review-section .item .img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    border-radius: 50%;
+    z-index: 1;
+} 
+
+.customer-review-section .item .img img { 
+    border-radius: 50%;
+}
+
+.customer-review-section .item .tittle {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.customer-review-section .item .customer-padding {
+    margin-top: 51px;
+    text-align: center;
+}
+ 
+  }
+{% endstylesheet %}
+
+{% javascript %}
+
+$(".customer-review-section").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1, 
+        arrows: true,
+        dots: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		responsive: [
+            {
+              breakpoint: 1201,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+				arrows: true,
+				dots: false, 
+				arrows: false,
+                centerMode: true,
+                centerPadding: '100px'
+              } 
+            },
+          {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+				arrows: true,
+				dots: false, 
+				arrows: false,
+				dots: false,
+                centerMode: true,
+                centerPadding: '100px' 
+              } 
+            },
+          {
+              breakpoint: 601,
+              settings: {
+                slidesToShow: 1, 
+                slidesToScroll: 1,
+				arrows: true,
+				dots: false, 
+				arrows: false,
+				dots: false,
+                centerMode: true,
+                centerPadding: '100px' 
+              } 
+            }
+          ]
+});
+
+{% endjavascript %}

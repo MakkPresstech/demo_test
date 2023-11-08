@@ -1,0 +1,769 @@
+{
+  "sections": {
+    "bc9ab96f-8982-4e69-818a-8623aed9af0c": {
+      "type": "category-after-banner",
+      "blocks": {
+        "155a4569-c316-45e9-8f49-4f1893229df8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_Arrival.jpg",
+            "link": "shopify:\/\/collections\/new-arrivals",
+            "category-title": "New Arrival"
+          }
+        },
+        "template--19935364350234__bc9ab96f-8982-4e69-818a-8623aed9af0c-168958714882ff9dd1-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Anarkali_Suit_Sets.jpg",
+            "link": "shopify:\/\/collections\/anarkali-suit-sets",
+            "category-title": "Anarkali Suit Sets"
+          }
+        },
+        "58f4e2f2-468e-4259-83ca-603b39519166": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Co-Ords_Set.jpg",
+            "link": "shopify:\/\/collections\/co-ords-set",
+            "category-title": "Co-Ords Set"
+          }
+        },
+        "eaa8b85b-d355-4d05-b779-98d1c28b0601": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dresses_94e208f2-a151-484a-bf62-21157393b7d9.jpg",
+            "link": "shopify:\/\/collections\/dresses",
+            "category-title": "Dresses"
+          }
+        },
+        "87875fb0-f214-4051-b5a3-6f0c13418b44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Casual_Kurta.jpg",
+            "link": "shopify:\/\/collections\/casual-wear",
+            "category-title": "Casual Kurta"
+          }
+        },
+        "d1ce6284-aa36-48d1-84d1-0a2c81934135": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sarees.jpg",
+            "link": "#",
+            "category-title": "Sarees"
+          }
+        },
+        "33c728a1-8a1e-441d-8f2b-c515e905108a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kurta_Sets.jpg",
+            "link": "shopify:\/\/collections\/kurta-sets",
+            "category-title": "Kurta Sets"
+          }
+        },
+        "d5177e8d-a616-45d9-857e-a6f2f2ca4d0c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lounge_Wear_55704116-2ded-4bcc-8f55-23cd821c36ec.jpg",
+            "link": "shopify:\/\/collections\/lounge-wear",
+            "category-title": "Lounge Wear"
+          }
+        }
+      },
+      "block_order": [
+        "155a4569-c316-45e9-8f49-4f1893229df8",
+        "template--19935364350234__bc9ab96f-8982-4e69-818a-8623aed9af0c-168958714882ff9dd1-0",
+        "58f4e2f2-468e-4259-83ca-603b39519166",
+        "eaa8b85b-d355-4d05-b779-98d1c28b0601",
+        "87875fb0-f214-4051-b5a3-6f0c13418b44",
+        "d1ce6284-aa36-48d1-84d1-0a2c81934135",
+        "33c728a1-8a1e-441d-8f2b-c515e905108a",
+        "d5177e8d-a616-45d9-857e-a6f2f2ca4d0c"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": ""
+      }
+    },
+    "825ab036-c4e8-4a10-96f2-cde036e6ed34": {
+      "type": "hero-slider",
+      "blocks": {
+        "461c74c8-4fff-46f3-a9c2-68b846ba6ded": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stylum_banner_1_5b73d369-e519-4a56-8e93-ad2adafde6b7.jpg",
+            "image-mob": "shopify:\/\/shop_images\/stylum_mobile_banner_38d95552-48da-4cb8-b5ae-539fcc0401a1.jpg",
+            "image-url": "",
+            "collection_tittle": "",
+            "sub_text": "",
+            "link": ""
+          }
+        },
+        "ef01bfc3-011a-4125-8c98-9cd5d78314e5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stylum_website_banner_SUMMER_STYLE.jpg",
+            "image-mob": "shopify:\/\/shop_images\/stylum_mobile_banner_2_fb5bbdd5-1181-4ba6-96a3-c90732b4ad02.jpg",
+            "image-url": "",
+            "collection_tittle": "",
+            "sub_text": "",
+            "link": ""
+          }
+        },
+        "6b84e776-ab2f-4d53-800f-7dfbcbdf9a8b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/stylum_Raksha_Bandhan_Special.jpg",
+            "image-mob": "shopify:\/\/shop_images\/stylum_mobile_banner_3.jpg",
+            "image-url": "",
+            "collection_tittle": "",
+            "sub_text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "461c74c8-4fff-46f3-a9c2-68b846ba6ded",
+        "ef01bfc3-011a-4125-8c98-9cd5d78314e5",
+        "6b84e776-ab2f-4d53-800f-7dfbcbdf9a8b"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": ""
+      }
+    },
+    "e3808111-aa46-44ab-ac15-13ae10cd8427": {
+      "type": "hero-only-slider",
+      "blocks": {
+        "template--19935364350234__e3808111-aa46-44ab-ac15-13ae10cd8427-168958335041069c42-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/STYLUM-OFFER-POST-1_version1_c6a84878-1851-4a88-aadd-9e6903541260.gif",
+            "image-mob": "shopify:\/\/shop_images\/STYLUM-OFFER-POST-1_version1_5f9bed9e-d9c5-490a-abf1-99207b12e45f.gif",
+            "image-url": "#"
+          }
+        },
+        "fc085db9-7df7-40ec-832b-79f0c077be23": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OFFER-3i-update.gif",
+            "image-mob": "shopify:\/\/shop_images\/OFFER-3i-update_09936693-0cb2-4101-ae30-18827213fd4a.gif",
+            "image-url": "#"
+          }
+        },
+        "c62dd27e-a77c-40d3-b268-7c8e547268f6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OFFER-3i_c12b032b-9050-4339-bb49-b41f6bd21d84.gif",
+            "image-mob": "shopify:\/\/shop_images\/OFFER-3i_ba42687e-d8be-47de-b43f-bdd32f2008b8.gif",
+            "image-url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "template--19935364350234__e3808111-aa46-44ab-ac15-13ae10cd8427-168958335041069c42-0",
+        "fc085db9-7df7-40ec-832b-79f0c077be23",
+        "c62dd27e-a77c-40d3-b268-7c8e547268f6"
+      ],
+      "settings": {
+      }
+    },
+    "1663332629408a654d": {
+      "type": "offer-section",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "image1": "shopify:\/\/shop_images\/1_large_6e7d5ff9-ff06-423d-9aaf-31892cec28cb.png",
+        "image2": "shopify:\/\/shop_images\/2_large_16e66c49-6f77-4080-a7dc-e00b6e31a919.png",
+        "image3": "shopify:\/\/shop_images\/3_large_1bd091d6-d313-490b-af44-0158f5af496d.png"
+      }
+    },
+    "16632264896706f493": {
+      "type": "category-section",
+      "blocks": {
+        "16632264894cb93358-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kurtas_Kurtis_b844e7e9-1fa3-4609-8fb7-621932bc4ba4.jpg",
+            "image2": "shopify:\/\/shop_images\/Kurtas_Kurtis_4293903c-c835-434e-83f0-303660b8be66.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/kurtas-kurtis"
+          }
+        },
+        "2f351955-9a89-4ace-9ddd-8bcd85413c7b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Suit_Sets_9a6ea547-3739-445c-b43f-8d96d6801cda.jpg",
+            "image2": "shopify:\/\/shop_images\/Suit_Sets_0f3d11d4-fd0a-4b05-acd2-9dd6ff71851b.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/suit-sets"
+          }
+        },
+        "700802b2-949a-4ee5-8302-d1d911c7b693": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Co-Ords_Set_copy_12a88f52-6247-40fa-9f68-db0107f6cae2.jpg",
+            "image2": "shopify:\/\/shop_images\/Co-Ords_Set_copy_ecb0f9de-15d4-4eae-97b3-84f6604bfc02.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/co-ords-set"
+          }
+        },
+        "b3a3584d-518c-4693-9f56-ee46e4703abe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sarees_60956142-39fc-4877-9361-1b485db020e6.jpg",
+            "image2": "shopify:\/\/shop_images\/Sarees_0aac8470-750b-409c-95a0-d647c3886140.jpg",
+            "collection_tittle": "",
+            "link": "#"
+          }
+        },
+        "718208bb-c53e-44cd-ae5f-adb21cd848a1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dresses_70e94b15-ca31-43fe-a3f8-9423576db098.jpg",
+            "image2": "shopify:\/\/shop_images\/Dresses_b53ad57e-9a4e-4ebe-8d6b-f0f0f5903e3d.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/dresses"
+          }
+        },
+        "e357c732-0061-41c3-bb13-329857c37b8a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tops_2594ed86-1482-46c7-bb57-8808870a3351.jpg",
+            "image2": "shopify:\/\/shop_images\/Tops_82dea61c-8762-48e9-8808-e32f2ce08693.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/tops"
+          }
+        },
+        "d784a9a1-e4c7-4b47-a279-ffcac3074d73": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lounge_Wear_670dbc27-77aa-4e82-bffc-c74a0d1bcf75.jpg",
+            "image2": "shopify:\/\/shop_images\/Lounge_Wear_de950eed-976a-4404-8300-5aac32d15b7b.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/lounge-wear"
+          }
+        },
+        "96559a96-6909-4bd7-842e-d9a7c1161f42": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Plus_Size_ddef5daa-59b0-4f0f-a966-5e7d543533e7.jpg",
+            "image2": "shopify:\/\/shop_images\/Plus_Size_3b62eb7e-7b19-45cb-b97c-c162135fc74e.jpg",
+            "collection_tittle": "",
+            "link": "shopify:\/\/collections\/plus-size"
+          }
+        }
+      },
+      "block_order": [
+        "16632264894cb93358-0",
+        "2f351955-9a89-4ace-9ddd-8bcd85413c7b",
+        "700802b2-949a-4ee5-8302-d1d911c7b693",
+        "b3a3584d-518c-4693-9f56-ee46e4703abe",
+        "718208bb-c53e-44cd-ae5f-adb21cd848a1",
+        "e357c732-0061-41c3-bb13-329857c37b8a",
+        "d784a9a1-e4c7-4b47-a279-ffcac3074d73",
+        "96559a96-6909-4bd7-842e-d9a7c1161f42"
+      ],
+      "settings": {
+        "subheading": "Shop Our",
+        "title": "Category"
+      }
+    },
+    "0c372da3-3418-4855-a1f2-9af856e651c2": {
+      "type": "hero-slider",
+      "blocks": {
+        "template--19935364350234__0c372da3-3418-4855-a1f2-9af856e651c2-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/app_banner_new.png",
+            "image-mob": "shopify:\/\/shop_images\/app_banner_new.png",
+            "image-url": "",
+            "collection_tittle": "",
+            "sub_text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19935364350234__0c372da3-3418-4855-a1f2-9af856e651c2-image-1"
+      ],
+      "settings": {
+        "title": "Shop the vibe",
+        "subheading": ""
+      }
+    },
+    "1691648566ba4c1396": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1663235582b396bb31": {
+      "type": "collection-section",
+      "settings": {
+        "subheading": "Shop By",
+        "title": "Shop Kurtas & Kurtis",
+        "img-1": "shopify:\/\/shop_images\/Anarkali_Suit_Sets_cdbd14ee-e4b6-41ef-9858-d1f6e24cad04.jpg",
+        "subtext1": "",
+        "shop-now-1": "",
+        "link1": "shopify:\/\/collections\/anarkali-suit-sets",
+        "img-2": "shopify:\/\/shop_images\/Co-ords_Set_86f37a2a-736a-4869-8050-5e7443b31958.jpg",
+        "img-mob1": "shopify:\/\/shop_images\/SHOP_BY_KURTA_KURTIS.jpg",
+        "subtext2": "",
+        "shop-now-2": "",
+        "link2": "shopify:\/\/collections\/co-ords-set",
+        "img-3": "shopify:\/\/shop_images\/Kurta_Sets_c7c0806b-3624-4988-a933-d76e7bfcc5b0.jpg",
+        "img-mob2": "shopify:\/\/shop_images\/Kurta_Sets_eef37c46-5c4f-4f93-9938-6b17d035db91.jpg",
+        "subtext3": "",
+        "shop-now-3": "",
+        "link3": "shopify:\/\/collections\/kurta-sets",
+        "img-4": "shopify:\/\/shop_images\/Sharara_Sets_52fa3d89-e995-4bb4-a610-54acfa0d0863.jpg",
+        "subtext4": "",
+        "shop-now-4": "",
+        "link4": "shopify:\/\/collections\/office-wear"
+      }
+    },
+    "64f2ef25-43fc-465d-bb83-1d213f359b5f": {
+      "type": "custom-featured-collection",
+      "settings": {
+        "subheading": "Shop Our",
+        "title": "Best Selling Beauties",
+        "heading_size": "h2",
+        "tab1_heading": "Suit Set",
+        "products_to_show1": 10,
+        "tab1_collection": "suit-sets",
+        "tab2_heading": "Kurtas & Kurtis",
+        "products_to_show2": 10,
+        "tab2_collection": "kurtas-kurtis",
+        "tab3_heading": "Co-Ords Set",
+        "products_to_show3": 7,
+        "tab3_collection": "co-ords-set",
+        "tab4_heading": "Dresses",
+        "products_to_show4": 6,
+        "tab4_collection": "dresses",
+        "tab5_heading": "Lounge Wear",
+        "products_to_show5": 9,
+        "tab5_collection": "lounge-wear",
+        "tab6_heading": "Sarees",
+        "products_to_show6": 5,
+        "tab6_collection": "new-arrivals",
+        "tab7_heading": "",
+        "products_to_show7": 4,
+        "tab7_collection": "",
+        "show_view_all": "",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true
+      }
+    },
+    "d4c40b08-4a7e-41c5-9374-ba01cbb163e5": {
+      "type": "new-category",
+      "blocks": {
+        "template--19935364350234__d4c40b08-4a7e-41c5-9374-ba01cbb163e5-16895973003218a72d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Festive_Collection.jpg",
+            "link": "shopify:\/\/collections\/festive-wear",
+            "category-title": "Festive Collection"
+          }
+        },
+        "da696e90-cfa4-4d61-ab17-a64e720e3b1c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bandhani_Lehariya.jpg",
+            "link": "#",
+            "category-title": "Bandhani & Lehariya"
+          }
+        },
+        "6987bb32-0c30-4256-98b3-5cfe66e27fdf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Every_Day_Affair.jpg",
+            "link": "#",
+            "category-title": "Every Day Affair"
+          }
+        },
+        "b1dae82b-bb98-4e66-807e-8eeb04a8c18a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fusion_Wear.jpg",
+            "link": "#",
+            "category-title": "Fusion Wear"
+          }
+        },
+        "f4002656-f50e-4658-a649-bca8700588f7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sarees_d16f1a4b-9d72-4d2f-b5f7-db768132dc53.jpg",
+            "link": "#",
+            "category-title": "Sarees"
+          }
+        },
+        "2df55f37-004d-4dea-b72e-0289ecb7c40d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Anarkalis.jpg",
+            "link": "shopify:\/\/collections\/anarkali-kurta",
+            "category-title": "Anarkalis"
+          }
+        },
+        "abe9d6c5-d956-43fb-8a89-6f0a7be190bb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sharara_Sets.jpg",
+            "link": "shopify:\/\/collections\/sharara-sets",
+            "category-title": "Sharara Sets"
+          }
+        },
+        "ac61affd-6e60-4d34-93cf-887368c22238": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dresses_c267bc4e-3e60-456e-9f09-b1f9b41fd500.jpg",
+            "link": "shopify:\/\/collections\/dresses",
+            "category-title": "Dresses"
+          }
+        }
+      },
+      "block_order": [
+        "template--19935364350234__d4c40b08-4a7e-41c5-9374-ba01cbb163e5-16895973003218a72d-0",
+        "da696e90-cfa4-4d61-ab17-a64e720e3b1c",
+        "6987bb32-0c30-4256-98b3-5cfe66e27fdf",
+        "b1dae82b-bb98-4e66-807e-8eeb04a8c18a",
+        "f4002656-f50e-4658-a649-bca8700588f7",
+        "2df55f37-004d-4dea-b72e-0289ecb7c40d",
+        "abe9d6c5-d956-43fb-8a89-6f0a7be190bb",
+        "ac61affd-6e60-4d34-93cf-887368c22238"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Collections"
+      }
+    },
+    "16632169542fc54b72": {
+      "type": "new-arrival",
+      "settings": {
+        "subheading": "Shop Our",
+        "title": "New Arrival",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "362f3bd2-615d-4e8d-a1cf-4694ba8fbb09": {
+      "type": "hero-slider",
+      "blocks": {
+        "template--19854544830746__362f3bd2-615d-4e8d-a1cf-4694ba8fbb09-1689163860bb62d091-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banne_Afte_Review_coordet_set_02d4fafd-4bf6-4571-87a6-c1c0532205ce.jpg",
+            "image-mob": "shopify:\/\/shop_images\/Banne_Afte_Review_coordet_set_Mobile_Page_5339fc78-2674-4577-a07e-1a217cd79bdf.jpg",
+            "image-url": "",
+            "collection_tittle": "",
+            "sub_text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19854544830746__362f3bd2-615d-4e8d-a1cf-4694ba8fbb09-1689163860bb62d091-0"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": ""
+      }
+    },
+    "441b9968-8447-447d-9b35-2297d0926aab": {
+      "type": "shop-by-price",
+      "blocks": {
+        "template--19935364350234__441b9968-8447-447d-9b35-2297d0926aab-1689678314d38ae1e0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Festive_Wear_20d57e80-d86c-4b08-a0f3-41b623111ed5.jpg",
+            "collection_tittle": "Festive Wear",
+            "link": "shopify:\/\/collections\/festive-wear"
+          }
+        },
+        "b0f3dd38-e61e-410a-873e-f4aabf589c06": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Casual_Wear.jpg",
+            "collection_tittle": "Casual Wear",
+            "link": "shopify:\/\/collections\/casual-wear"
+          }
+        },
+        "531c900e-5b54-4e42-b648-272a1437133a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Office_Wear_bc443003-7783-41dc-9e8d-84dbfa7de190.jpg",
+            "collection_tittle": "Office Wear",
+            "link": "shopify:\/\/collections\/office-wear"
+          }
+        },
+        "7e22f1c1-0146-4bab-b539-5762a7767798": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Night_Wear.jpg",
+            "collection_tittle": "Night wear",
+            "link": "shopify:\/\/collections\/lounge-wear"
+          }
+        },
+        "bf236ff0-ccfd-4e1a-a350-7bd968771079": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lounge_Wear_af5196e2-e681-4cdc-bdd6-3ad5925f4e21.jpg",
+            "collection_tittle": "Lounge wear",
+            "link": "shopify:\/\/collections\/lounge-wear"
+          }
+        }
+      },
+      "block_order": [
+        "template--19935364350234__441b9968-8447-447d-9b35-2297d0926aab-1689678314d38ae1e0-0",
+        "b0f3dd38-e61e-410a-873e-f4aabf589c06",
+        "531c900e-5b54-4e42-b648-272a1437133a",
+        "7e22f1c1-0146-4bab-b539-5762a7767798",
+        "bf236ff0-ccfd-4e1a-a350-7bd968771079"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Shop by occasion"
+      }
+    },
+    "ede5beb3-6dc9-49a7-89ec-0686a59661a7": {
+      "type": "about-us",
+      "settings": {
+        "title": "",
+        "sub-title": "",
+        "image": "shopify:\/\/shop_images\/Homepage_1.png",
+        "image-url": "",
+        "heading": "About us",
+        "sub-heading": "Traditional and <span>Contemporary<\/span> Experience",
+        "sub-heading2": "Owing to this philosophy, Stylum as a brand is a place that not only focuses on its products but believes in crafting a unique concoction of style and experience to come up with meaningful contemporary silhouettes.",
+        "sub-heading3": "Mesmerizing, not quite ethnic, and not all out western, our brand curates products with a touch of traditionally handcrafted embroideries like never before in lush fabrics, elegant motifs, and prints with breathtaking details to make sure that every attire speaks for you.",
+        "button": "Read More",
+        "button-link": "shopify:\/\/pages\/about-us"
+      }
+    },
+    "1663245260dbf08dfb": {
+      "type": "usp-section",
+      "blocks": {
+        "16632452603ceff7e2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fast-delivery1.png",
+            "icon-name": "Free Shipping"
+          }
+        },
+        "a3ca61b1-0fbf-4e49-bff4-5a69dc26a3e7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/worldwide_delivery1.png",
+            "icon-name": "Worldwide Delivery"
+          }
+        },
+        "4f722504-e20c-4b54-bf1b-f2eb05036479": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/secured-payments1.png",
+            "icon-name": "Secured Payments"
+          }
+        },
+        "2775da44-3d39-4857-91fd-6d07ece2b7db": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cash-on-delivery1.png",
+            "icon-name": "Cash On Delivery"
+          }
+        },
+        "5ea0b2cb-cdcd-4b67-b449-0fcdb0da73aa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/customer-support1.png",
+            "icon-name": "Customer Support"
+          }
+        }
+      },
+      "block_order": [
+        "16632452603ceff7e2-0",
+        "a3ca61b1-0fbf-4e49-bff4-5a69dc26a3e7",
+        "4f722504-e20c-4b54-bf1b-f2eb05036479",
+        "2775da44-3d39-4857-91fd-6d07ece2b7db",
+        "5ea0b2cb-cdcd-4b67-b449-0fcdb0da73aa"
+      ],
+      "settings": {
+        "subheading": "Check Our",
+        "title": ""
+      }
+    },
+    "16632178752d6703fd": {
+      "type": "customer-review",
+      "blocks": {
+        "166321787500e975f4-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Preeti_Maurya.jpg",
+            "discri": "Kurta set is so so so amazing... I just loved it ❤️ the fitting and colour is same as shown in the pictures and it is affordable product... If you are thinking to buy this set then just go for it☺️😍",
+            "name": "Preeti Maurya",
+            "review-star": "fiveStar",
+            "link": ""
+          }
+        },
+        "7ab0d934-782f-4f03-84fa-243539905c57": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Prity_Kalita.jpg",
+            "discri": "Perfect for summer.. Pure cotton and comfortable to wear.. Must buy product..",
+            "name": "Prity Kalita",
+            "review-star": "fiveStar",
+            "link": ""
+          }
+        },
+        "4487dcd8-8ee3-419b-b565-615ff82a0539": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ketaki_Jha.jpg",
+            "discri": "Best best nd nothing but the best❤️",
+            "name": "Ketaki Jha",
+            "review-star": "fiveStar",
+            "link": ""
+          }
+        },
+        "9a96c38d-e56e-43ca-9091-cad1d6aaaf22": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bonti_Marak.jpg",
+            "discri": "Love this sharara set♥️red dupatta was also good but i like in different colour so i took it from my closet.",
+            "name": "Bonti Marak",
+            "review-star": "fiveStar",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166321787500e975f4-0",
+        "7ab0d934-782f-4f03-84fa-243539905c57",
+        "4487dcd8-8ee3-419b-b565-615ff82a0539",
+        "9a96c38d-e56e-43ca-9091-cad1d6aaaf22"
+      ],
+      "settings": {
+        "title": "Customer Review",
+        "subheading": "Check Our",
+        "view-all": "",
+        "link-all": ""
+      }
+    },
+    "d39eec75-40f3-441a-a9a8-3a23367ea477": {
+      "type": "hero-slider",
+      "blocks": {
+        "template--19935364350234__d39eec75-40f3-441a-a9a8-3a23367ea477-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banne_Afte_Review_Page_38c2b6d9-0dca-4b4d-b5f3-7f416d2e1e2c.jpg",
+            "image-mob": "shopify:\/\/shop_images\/Banne_Afte_Review_coordet_set_Mobile_Page_saree_933a137a-f5ea-4d75-baca-e7f84bfaadd5.jpg",
+            "image-url": "",
+            "collection_tittle": "",
+            "sub_text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19935364350234__d39eec75-40f3-441a-a9a8-3a23367ea477-image-1"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": ""
+      }
+    },
+    "166322651601eb0c2a": {
+      "type": "featured-blog",
+      "settings": {
+        "subheading": "Check Our",
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "16632417190d1a58d2": {
+      "type": "instagram-section",
+      "settings": {
+        "subheading": "#STYLUM ON",
+        "title": "Stylum On Instagram"
+      }
+    },
+    "e52e800d-844c-456c-9c6f-384f269493ae": {
+      "type": "instafeed",
+      "settings": {
+        "heading_size": 20,
+        "feed_width": 100,
+        "html_area": ""
+      }
+    },
+    "228d0575-fcf0-488b-84d2-e1d1cd26804f": {
+      "type": "custom-text",
+      "settings": {
+        "title": "",
+        "descripion": "<h2>Find The Best &amp; Most Elegant Range of Women’s Clothing At Stylum<\/h2>\n<p>Discover a world where women's love for clothes is truly understood. With years of expertise in crafting enchanting outfits, Stylum has built a reputation of trust among its customers. As we establish our online presence, explore our website for an exquisite collection of <a href=\"https:\/\/stylum.in\/collections\/new-arrivals\">women's clothing<\/a> that will captivate your senses. Our user-friendly interface ensures a seamless shopping experience like no other.<\/p>\n<br>\n<h2>Exquisite Selection of Women’s Clothing<\/h2>\n<p>Introducing Stylum, where fashion meets modernity. Our curated collection of clothes caters to the needs of today's women - young, stylish, and with a keen eye for aesthetic fashion. Whether you embrace the elegance of <a href=\"https:\/\/stylum.in\/collections\/suit-sets\">Indian ethnic wear<\/a> or adore the sophistication of <a href=\"https:\/\/stylum.in\/collections\/dresses\">western dresses<\/a>, Stylum is your one-stop destination for exquisitely crafted clothing pieces that elevate your shopping experience. Explore our special categories of women's wear below for a detailed look into the world of Stylum.\n<\/p>\n\n<h2>Kurtis <\/h2>\n<p>Immerse yourself in the enchanting allure of our kurtis collection. From classic silhouettes to trendy designs, our range of kurtis is a celebration of intricate craftsmanship and artistic flair. Embrace the grace and charm of Indian culture while staying fashionably ahead with our <a href=\"https:\/\/stylum.in\/collections\/kurtas-kurtis\">cotton straight kurta<\/a> collection.<\/p>\n\n<h2>Suit Sets<\/h2>\n<p>Elevate your style quotient with our exquisite suit sets. Designed to perfection, these ensembles blend traditional elements with contemporary aesthetics. Embrace the opulence of luxurious fabrics, intricate embroideries, and captivating prints that exude an aura of elegance with our <a href=\"https:\/\/stylum.in\/collections\/kurta-sets\">cotton kurta sets with dupatta.<\/a><\/p>\n\n<h2>Coord Sets<\/h2>\n<p>Experience the ultimate in coordinated fashion with our stunning collection of coord sets. These ensembles are thoughtfully designed to effortlessly bring together style and convenience, allowing you to create a perfectly put-together look with ease.<\/p>\n\n<h2>Western Wear <\/h2>\n<p>Discover the epitome of modern fashion with our collection of western wear. From stylish dresses and trendy <a href=\"https:\/\/stylum.in\/collections\/tops\">cotton printed tops<\/a> to comfortable and chic jumpsuits, we have curated a range that reflects your individuality and embraces the latest fashion trends.<\/p>\n<h2>Lounge Wear<\/h2>\n<p>Indulge in luxurious comfort with our lounge wear collection. Crafted with the softest fabrics, our loungewear pieces offer a perfect blend of style and relaxation. Whether you're unwinding at home or stepping out for a casual outing, our <a href=\"https:\/\/stylum.in\/collections\/lounge-wear\">lounge wear<\/a> ensures you always look effortlessly chic.<\/p>\n\n<h2>Festive Wear <\/h2>\n<p>Celebrate special occasions in style with our festive wear collection. From graceful sarees and regal lehengas to intricately embellished salwar suits and sharara set with dupatta, our <a href=\"https:\/\/stylum.in\/collections\/festive-wear\">festive wear<\/a> range captures the essence of traditional grandeur and contemporary glamour. Embrace the festivities with confidence and grace.<\/p>\n\n<h2>Plus Size <\/h2>\n\n<p>At Stylum, we believe that fashion should be inclusive and empowering. Our plus-size collection is designed to flatter every curve and accentuate your unique beauty. Explore a wide range of trendy and stylish options like suit sets, <a href=\"https:\/\/stylum.in\/collections\/plus-size-lounge-wear\">plus size night suit<\/a> and more ensembles that celebrate your body and help you feel confident in your own skin.<\/p>\n\n<h2>Dupattas<\/h2>\n<p>Complete your ethnic ensemble with our exquisite collection of <a href=\"https:\/\/stylum.in\/collections\/dupatta\">dupattas<\/a>. From delicate chiffons to rich silk blends, our dupattas are a testament to the artistry and craftsmanship of Indian textiles. Add a touch of elegance and sophistication to your outfits with our meticulously designed dupattas. <\/p>\n<br>\n<h2>Best Online Destination For Women’s Clothing <\/h2>\n<p>Experience the extraordinary with Stylum. We are dedicated to providing a shopping experience that goes above and beyond ordinary fashion. With our unwavering passion for quality, exquisite design, and utmost customer satisfaction, we invite you to explore our exclusive collection and embark on a journey into a world of style and elegance. Embrace the harmonious blend of tradition and modernity - embrace the essence of Stylum.<\/p>\n<br>\n<h2>FAQs <\/h2>\n<h3>What are the latest trends in fashion for women? <\/h3>\n<p>The latest trends in fashion for women include kurta sets, bold and vibrant prints, statement sleeves in dresses and suits sets.<\/p>\n<h3>Which is the most popular Indian clothing?<\/h3>\n<p>India has a rich fashion scene, with kurtas and suits being the go-to choices for women on casual days. Stylum provides a diverse collection of stunning kurtas and suit sets that you can wear for different occasions.<\/p>\n<h3>Do you offer ethnic outfits for plus size? <\/h3>\n<p>Yes, we offer a wide range of ethnic outfits for plus size individuals.We believe in inclusivity and aim to provide fashionable options for everyone, ensuring that our plus size customers feel confident and stylish in their ethnic wear.<\/p>"
+      }
+    },
+    "f8cb978a-237f-408d-9c64-f67ba6cf79f7": {
+      "type": "popular-searches",
+      "settings": {
+        "title": "Popular searches",
+        "descripion": "<p><a href=\"https:\/\/stylum.in\/collections\/a-line-kurta\">A-Line Kurta<\/a> | <a href=\"https:\/\/stylum.in\/collections\/anarkali-kurta\">Anarkali Kurta<\/a> | <a href=\"https:\/\/stylum.in\/collections\/flared-kurta\">Flared Kurta<\/a> | <a href=\"https:\/\/stylum.in\/collections\/kaftan-kurta\">Kaftan Kurta<\/a> | <a href=\"https:\/\/stylum.in\/collections\/straight-kurta\">Straight Kurta<\/a> | <a href=\"https:\/\/stylum.in\/collections\/kurta-sets\">Kurta Sets for Women<\/a> | <a href=\"https:\/\/stylum.in\/collections\/kurtas-kurtis\">Kurtas &amp; Kurtis<\/a> | <a href=\"https:\/\/stylum.in\/collections\/dupatta\">Dupatta<\/a> | <a href=\"https:\/\/stylum.in\/collections\/suit-sets\">Suit Sets<\/a> | <a href=\"https:\/\/stylum.in\/collections\/festive-wear\">Festive Wear Kurta Sets<\/a> | <a href=\"https:\/\/stylum.in\/collections\/anarkali-suit-sets\">Anarkali Suit Sets<\/a> | <a href=\"https:\/\/stylum.in\/collections\/suit-sets\">Suits For Women<\/a> | <a href=\"https:\/\/stylum.in\/collections\/sharara-sets\">Sharara Sets<\/a> | <a href=\"https:\/\/stylum.in\/collections\/plus-size-suit-sets\">Plus Size Suit Sets<\/a> | <a href=\"https:\/\/stylum.in\/collections\/plus-size-kurtas\">Plus Size Kurtas<\/a> | <a href=\"https:\/\/stylum.in\/collections\/plus-size-lounge-wear\">Plus Size Lounge Wear<\/a> | <a href=\"https:\/\/stylum.in\/collections\/lounge-wear\">Lounge Wear<\/a> | <a href=\"https:\/\/stylum.in\/collections\/shirt-pyjama-set\">Shirt Pyjama Set<\/a> | <a href=\"https:\/\/stylum.in\/collections\/kurta-pyjama-set\">Kurta Pyjama Set<\/a> | <a href=\"https:\/\/stylum.in\/collections\/tops\">Printed Tops<\/a> | <a href=\"https:\/\/stylum.in\/collections\/dresses\">Long Dresses<\/a> | <a href=\"https:\/\/stylum.in\/collections\/western-wear\">Western Wear<\/a> | <a href=\"https:\/\/stylum.in\/collections\/casual-wear\">Casual Wear<\/a> | <a href=\"https:\/\/stylum.in\/collections\/office-wear\">Office Wear<\/a><\/p>"
+      }
+    }
+  },
+  "order": [
+    "bc9ab96f-8982-4e69-818a-8623aed9af0c",
+    "825ab036-c4e8-4a10-96f2-cde036e6ed34",
+    "e3808111-aa46-44ab-ac15-13ae10cd8427",
+    "1663332629408a654d",
+    "16632264896706f493",
+    "0c372da3-3418-4855-a1f2-9af856e651c2",
+    "1691648566ba4c1396",
+    "1663235582b396bb31",
+    "64f2ef25-43fc-465d-bb83-1d213f359b5f",
+    "d4c40b08-4a7e-41c5-9374-ba01cbb163e5",
+    "16632169542fc54b72",
+    "362f3bd2-615d-4e8d-a1cf-4694ba8fbb09",
+    "441b9968-8447-447d-9b35-2297d0926aab",
+    "ede5beb3-6dc9-49a7-89ec-0686a59661a7",
+    "1663245260dbf08dfb",
+    "16632178752d6703fd",
+    "d39eec75-40f3-441a-a9a8-3a23367ea477",
+    "166322651601eb0c2a",
+    "16632417190d1a58d2",
+    "e52e800d-844c-456c-9c6f-384f269493ae",
+    "228d0575-fcf0-488b-84d2-e1d1cd26804f",
+    "f8cb978a-237f-408d-9c64-f67ba6cf79f7"
+  ]
+}

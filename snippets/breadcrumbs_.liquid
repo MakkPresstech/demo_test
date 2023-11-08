@@ -1,0 +1,77 @@
+  <!-- Breadcrumbs -->
+
+
+  {% if request.page_type != 'customers/login' and request.page_type != 'cart' and request.path != '/pages/wishlist' %}
+
+<nav class="breadcrumbs">
+  <div class="page-width">
+  <ul>
+    {% if request.page_type != 'index' %}
+    <li><a href="{{ shop.url }}">Home</a></li> <span class="bread-arrow-nxt">›</span>
+    {% endif %}
+    {% if template contains 'product' %}
+      <span id="collection_crumb" class="bread-arrow-nxt"></span>
+     <li>{{ product.title }}</li>
+    {% elsif template contains 'collection' %}
+      {%- assign collection = collection -%}
+      {% unless collection.all_products %}
+        <!-- <li><a href="{{ shop.url }}">{{ shop.name }}</a></li> -->
+        <span class="bread-arrow-nxt">›</span><li>All Collections</li>
+      {% else %}
+        <li>{{ collection.title }}</li>
+      {% endunless %}
+    {% elsif template contains 'page' %}
+      <!-- <li><a href="{{ shop.url }}">{{ shop.name }}</a></li> -->
+      <li>{{ page.title }}</li>
+    {% elsif template contains 'article' %}
+      <!-- <li><a href="{{ shop.url }}">{{ shop.name }}</a></li> -->
+     <li><a href="/blogs/news">News</a></li>
+      <span class="bread-arrow-nxt">›</span><li>{{ article.title }}</li>
+    {% else %}
+      <!-- Add custom breadcrumb logic for other pages if needed -->
+    {% if request.page_type == 'blog' %}
+      <li>News</li>
+{% endif %}
+          {% if request.page_type == 'search' %}
+      <li><a href="/search" >Search</a></li>
+{% endif %}
+    {% endif %}
+  </ul>
+  </div>
+</nav>
+    {% endif %}
+ 
+
+                          <script>
+
+                            // alert('{{ request.page_type }}');
+
+ 
+
+                           if(document.referrer.includes('{{ shop.url }}/collections/') ){
+
+                                var collections = [];
+
+                            {% for collection in product.collections %} collections.push("{{ collection.handle -}}");{% endfor %}
+
+                             console.log(collections); 
+
+    var str = document.referrer;
+
+   
+
+    str = str.replace('{{ shop.url }}/collections/', '');
+
+
+
+   $.each(collections, function(index, value){
+
+     if(value == str )
+
+    $('#collection_crumb').html('<li><a href="{{ shop.url }}/collections/'+str+'" style="text-transform: capitalize;">'+str.replace('-', '  ')+'</a></li><span class="bread-arrow-nxt">›</span>');
+    
+ });
+                              
+                            }
+                            
+                          </script>

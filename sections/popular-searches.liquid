@@ -1,0 +1,78 @@
+<div class="page-width popular-searches" id="popular-searches">
+    <header class="seaction-heading-design header-text-center SectionHeader SectionHeader--center">
+        {%- if section.settings.subheading != blank -%}
+        <h3 class="subtitle h3">{{ section.settings.subheading | escape }}</h3>
+        {%- endif -%}
+    
+       {% if section.settings.img-heading != blank %}
+        <div class="heading-image">
+          <img src="{{ section.settings.img-heading | img_url: '1920x' }}" class="image-heading desktop-img" />
+          {% if section.settings.img-heading-mob != blank %}
+              <img src="{{ section.settings.img-heading-mob | img_url: '800x' }}" class="image-heading mobile-img" />
+          {% else %}
+              <img src="{{ section.settings.img-heading | img_url: '800x' }}" class="image-heading desktop-img force-desk" />
+          {% endif %}
+        </div>
+      {% else %}
+        <h3 class="title h2">{{ section.settings.title }}</h3>
+      {% endif %}
+    </header>
+
+    <div class="popular-search-wrap">
+      <div class="links-container">
+         {{ section.settings.descripion }}
+      </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "Popular searches",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+        },
+        {
+            "type": "html",
+            "id": "descripion",
+            "label": "Description", 
+            "default": "html"
+        },
+      {
+        "type": "image_picker",
+        "id": "img-heading",
+        "label": "Heading Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "img-heading-mob",
+        "label": "Heading Image Mob"
+      }
+    ],
+    "presets": [
+        {
+            "name": "Popular searches",
+            "settings": {
+                "title": "Popular searches"
+            }
+        }
+    ] 
+}
+{% endschema %}
+
+{% stylesheet %}
+   
+.popular-searches p {
+    margin: 0;
+}
+
+.popular-searches.page-width{
+    padding-bottom: 50px!important;
+} 
+ 
+      {% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

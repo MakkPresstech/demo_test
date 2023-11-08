@@ -1,0 +1,22 @@
+<div class="page-title-heading page-width page-width--narrow section-{{ section.id }}-padding">
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+</div>
+<div class="wishlist-page">
+  <div class="page-width">
+  	<div id='ZoomyWishlistPage'></div><script src='https://zooomyapps.com/wishlist/ListWishlist.js' data-shop-id='{{shop.permanent_domain}}' data-customer-id='{{customer.id}}' data-customer-email='{{customer.email}}'  ></script>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

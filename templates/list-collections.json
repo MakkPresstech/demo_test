@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "custom-image": "shopify:\/\/shop_images\/stylum_New_arrivals_collections_1.png",
+        "sort": "alphabetical",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "columns_mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

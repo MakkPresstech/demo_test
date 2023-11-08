@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "header": {
+      "menu": "Մենյու"
+    }
+  },
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " և "
+    }
+  }
+}

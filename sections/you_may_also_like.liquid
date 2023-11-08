@@ -1,0 +1,32 @@
+<div class="page-width">
+
+  {% if product.metafields.custom.youmayalsolike != blank %}
+  <h2 class="product-recommendations__heading h2">You may also like</h2>
+  {% endif %}
+  <ul
+    class="grid product-grid grid--4-col-desktop grid--2-col-tablet-down"
+    role="list"
+  >
+
+    {% assign p_handle = product.metafields.custom.custom.youmayalsolike.value | split: ','  %}
+    {% assign final_size = p_handle.size | minus: 1 %}
+    {% for i in (0..final_size) %}
+      {% assign p = p_handle[i] %}
+     {% assign rec_product = all_products[p] %}
+      {% include 'card-product', product: rec_product %}
+    {% endfor %}
+   
+  </ul>
+</div>
+{% schema %}
+  {
+    "name": "YOUY-MAY-ALSO-LIKE",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

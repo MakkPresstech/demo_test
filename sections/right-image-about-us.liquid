@@ -1,0 +1,124 @@
+<div class="cus-pading image-with-text right-image">
+    <div class="page-width-aboutus">
+        {%- if section.settings.sub-title != blank or section.settings.title != blank -%}
+      <header class="seaction-heading-design SectionHeader SectionHeader--center ">
+        {%- if section.settings.sub-title != blank -%}
+          <h3 class="subtitle h3">{{ section.settings.sub-title | escape }}</h3>
+        {%- endif -%}
+
+        {%- if section.settings.title != blank -%}
+          <h2 class="title h2">{{ section.settings.title | escape }}</h2>
+        {%- endif -%}
+        
+      </header>
+    {%- endif -%}
+        <div class="image-text-section lft-imge-text">
+            <div class="item image-text">
+              
+                <div class="image-with-text-content">
+                  <div class="about-white">
+                    {%- if section.settings.heading != blank -%}
+                    <h2 class="image-with-text-heading title h2">
+                        {{ section.settings.heading }}
+                    </h2>
+                  
+                    {% endif %}
+                    {%- if section.settings.sub-heading != blank -%}
+                    <p class="image-text-content-heading">
+                        {{ section.settings.sub-heading }}
+                    </p>
+                     {% endif %}
+                        {%- if section.settings.sub-heading2 != blank -%}
+                    <p class="image-text-content">
+                        {{ section.settings.sub-heading2 }}
+                    </p>
+                     <p class="image-text-content new">
+                        {{ section.settings.sub-heading3  }}
+                    </p>
+                    {% endif %}
+                    {%- if section.settings.button != blank -%}
+                    <a href="{{ section.settings.button-link }}" class="button cust-btn">
+                        {{ section.settings.button }}
+                    </a>
+                    {% endif %}
+                </div>
+                </div>
+            </div>
+            <div class="item image-banner ">
+                {%- if section.settings.image != blank -%}
+                <a href="{{ section.settings.image-url }}" class="image-banner-desktop1"><img class="image-banner-desk-img1" src="{{ section.settings.image | image_url }}" /></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "About us Right",
+"settings": [
+{
+"type": "text",
+"id" : "title",
+"label": "Title"
+},
+{
+"type": "text",
+"id" : "sub-title",
+"label": "Sub Title"
+},
+{
+"type": "image_picker",
+"id" : "image",
+"label": "IMAGE"
+},
+{
+"type": "url",
+"id" : "image-url",
+"label": "IMAGE URL"
+},
+ 
+{
+"type": "text",
+"id": "heading",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "sub-heading",
+"label": "Sub heading"
+},
+  {
+"type": "text",
+"id": "sub-heading2",
+"label": "Sub heading2"
+},
+   {
+"type": "text",
+"id": "sub-heading3",
+"label": "Sub heading3"
+},
+{
+"type": "text",
+"id": "button",
+"label": "Button"
+},
+{
+"type": "url",
+"id": "button-link",
+"label": "Button Link"
+}
+],
+"presets": [
+{
+"category": "IMAGE",
+"name": "About us Right"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

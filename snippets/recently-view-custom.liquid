@@ -1,0 +1,49 @@
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{{ 'jquery.products.min.js' | asset_url | script_tag }}
+{{ 'shopify-money.js' | asset_url | script_tag }}
+<!-- <div class="wrapper recently-viewed-product">
+
+  <div class="section-header ">
+            <h2 class="h1 section-header__title">Andra besökte också dessa produkter</h2></div>
+<div id="recently-viewed-products" class="grid-uniform collection clearfix  slide-recent-v" style="display:none">
+
+</div>
+</div> -->
+
+{% raw %}
+
+<script id="recently-viewed-product-template"  type="text/x-jquery-tmpl">
+<div class="grid__item grid-product  small--one-half medium--one-half large--one-quarter">
+
+<div id="product-${handle}" class="grid-product__wrapper ">
+    <div class="image ">
+      <a class="grid-product__image-link" href="${url}">
+        <div class="product--wrapper">
+        <img class="product--image" src="${Shopify.Products.resizeImage(featured_image, "x2000")}" />
+        </div>
+      </a>
+    </div>
+    <div class="grid-product__meta">
+      <a href="${url}">
+        <h4 class="grid-product__title">${title}</h4>
+        <p class="grid-product__price-wrap"> 
+          <span class="grid-product__price">${Shopify.formatMoney(variants[0].price)} </span>
+
+        </p>
+      </a>
+      <section>
+        <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="${variants[0].id}" />
+          <input min="1"  type="hidden" id="quantity" name="quantity" value="1"/>
+            <input type="submit" value="Lägg i varukorgen" class="btn">
+        </form>
+      </section>
+    </div>
+</div>
+</div>
+</script>
+{% endraw %}
+
+<script>
+Shopify.Products.showRecentlyViewed( { howManyToShow:4 } );
+</script>
